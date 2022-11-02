@@ -1,0 +1,211 @@
+/* ----- ALL ----- */
+
+* {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- HTML & BODY ----- */
+
+html, body{
+    overflow-x: hidden; 
+}
+
+/* ----- BODY ----- */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+}
+
+/* ----- HEADER ----- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D4D4D4;
+    width: 545px;
+    height: 110px;
+    padding: 50px 0 20px 0;
+}
+
+#nsBox {
+    background-color: #CE0E2D;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 2px;
+    height: 34px;
+    width: 224px;
+}
+
+#dateBox {
+    align-self: flex-end;
+}
+
+header > #row-1, header > #row-2 {
+    display: flex;
+    width: 100%;
+}
+header > #row-1{
+    display: flex;
+    justify-content: space-between;
+    height: 61px;
+}
+
+header > #row-2 {
+    justify-content: center;
+}
+
+header > #row-1 > #column-1,
+header > #row-1 > #column-2 {
+    height: 100%;
+}
+
+header > #row-1 > #column-1 {
+    width: 250px;
+}
+
+header > #row-1 > #column-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logoBox {
+    background-position: 'center';
+    background-repeat: no-repeat;
+    height: 100%;
+    background-image: url(./assets/BevNET_logo_Red.svg);
+}
+
+#dateBox > p {
+    color: #CE0E2D;
+    font-weight: 600;
+}
+
+#titleBox > h1{
+    color: #CE0E2D;
+    font-weight: 700;
+}
+
+#nsBox > p, #dateBox > p {
+    font-size: 18px;
+} 
+
+#titleBox > h1 {
+    font-size: 21px;
+}
+
+#nsBox > p{
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+
+@media (max-width: 650px) {
+    header {
+        height: 170px;
+    }
+    header > #row-1 {
+        flex-direction: column;
+        height: 120px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #column-1{
+        width: 220px !important;
+    }
+
+    #dateBox {
+        align-self: center;
+    }
+}
+
+/* ----- MAIN ----- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 599.19px;
+    width: 95%;
+    padding: 35px 0 35px 0;
+}
+
+main > hr:nth-of-type(1), 
+main > hr:nth-of-type(2){
+  width: 545px;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid #D4D4D4;
+    height: 318px;
+    width: 95%;
+    max-width: 545px;
+}
+
+#footer > p{
+    font-size: 16px;
+}
+
+footer > hr {
+    background-color: #CE0E2D;
+    border: none;
+    border-radius: 2px;
+    width: 61px;
+    height: 5px;
+}
+
+footer > p:nth-of-type(2),
+footer > p:nth-of-type(4){
+    text-align: center;
+}
+
+footer > p:nth-of-type(1),
+footer > p:nth-of-type(4){
+    color: #6C6C6C;
+    font-weight: 400;
+}
+
+footer > p:nth-of-type(2){
+    color: #CE0E2D;
+    font-weight: 500;
+}
+
+
+footer > p:nth-of-type(3){
+    color: #6C6C6C;
+    font-weight: 600;
+}
+
+footer > p:nth-of-type(4) > a:nth-of-type(1){
+    color: #2358C5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer > p:nth-of-type(4) > a:nth-of-type(2){
+    color: #6C6C6C;
+    font-weight: 600;
+}
+
+@media (max-width: 650px) {
+    footer > p {
+        font-size: 14px;
+    }
+}
