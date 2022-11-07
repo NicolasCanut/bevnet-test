@@ -1,62 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- HEAD -->
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bevnet-test</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- HEADER -->
-  <header>
-    <div id="row-1">
-      <div id="column-1">
-        <div id="logoBox"></div>
-      </div>
-      <div id="column-2">
-        <div id="nsBox">
-          <p>DAILY NEWSLETTER</p>
-        </div>
-        <div id="dateBox">
-          <p>October 13, 2022</p>
-        </div>
-      </div>
-    </div>
-    <div id="row-2">
-      <div id="titleBox">
-        <h1>Supplier Spotlight</h1>
-      </div>
-    </div>
-  </header>
-  <!-- MAIN -->
-  <main>
-    <img src="./assets/part-1.png" id="img-1">
-    <img src="./assets/part-2.png" id="img-2">
-  </main>
-  <!-- FOOTER -->
-  <footer>
-    <p>
-      This is a paid advertisement from Blue Marble that was sent to the BevNET Newsletter subscriber list. The advertiser bears sole responsibility for the content of this message.
-    </p>
-    <hr>
-    <p>
-      BevNET.com, Inc. 65 Chapel Street, Newton, MA 02458 
-      <br>
-      hello@bevnet.com
-    </p>
-    <p>
-      Submit News  |  Advertise  |  Update Subscription
-    </p>
-    <p>
-      You are receiving this email because you subscribed at our website at <a href="#">http://www.bevnet.com</a>. Click <a href="#">here</a> to unsubscribe.
-    </p>
-  </footer>
-</body>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+ <head>  
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=yes">
+   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+   <meta name="x-apple-disable-message-reformatting">
+   <meta name="color-scheme" content="light dark">
+   <meta name="supported-color-schemes" content="light dark">
+   <!-- <link rel="stylesheet" href="./index.css"> -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <title>BevNet test</title>
+   <style>
+    @media (max-width: 600px) {
+      .headerColumn {
+        display: inline-block;
+        width: 100%;
+      }
+      .headerGhostColumn {
+        display: none;
+      }
+      .logoGhostColumn {
+        display: block;
+      }
+      .nsP {
+        font-size: 26px;
+        padding: 10px 0 10px 0;
+      }
+      .dateP {
+        font-size: 25px;
+      }
+      .titleBox {
+        font-size: 21px;
+      }
+      /* .footerP {
+        font-size: 21px;
+      } */
+    }
+   </style>
+ </head>
+ <body>
+   <table id="wrapper-1" cellpadding="0", cellspacing="0", border="0" role="presentation" style=" 
+    margin: auto; 
+    background-color:#ffffff; 
+    border-collapse:collapse; 
+    width: 95%; 
+    max-width:600px; 
+    border-spacing:0; 
+    border: 0;
+    "
+   >
+           <tr>
+             <td>
+              <!-- HEADER -->
+              <table id="header" role="presentation" style="
+                background-color: #ffffff;
+                margin: auto; 
+                border-collapse:collapse; 
+                border:0; 
+                /* border: 1px solid red; */
+                width: 100%;
+                max-width: 545px; 
+                border-spacing:0;
+                "
+              >
+                <tr id="row-1" style="
+                    width: 100%;
+                    height: 70px;
+                    "
+                >
+                  <td class="headerColumn" id="column-1" >
+                    <table style="width: auto; margin: auto; height: auto;">
+                      <tr style="width: 100%;">
+                        <!-- <td style="width: 150px; display: none;">
+                          <span></span>
+                        </td> -->
+                        <td style="height: auto; width: 20vmax; border: 1px solid green;">
+                            <img class="logoImg" src="https://i.ibb.co/JcG3BBT/Bev-NET-logo-Red.png" alt="BevNet-logo" style="  
+                              border:0;
+                              float: left;
+                              width: 100%;
+                              "
+                            >
+                        </td>
+                        <!-- <td style="width: 150px; display: none;">
+                          <span></span>
+                        </td> -->
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="headerGhostColumn" style="width: 20px;">
+                    <span></span>
+                  </td>
+                    <td class="headerColumn" id="column-2">
+                      <table style="width: auto; margin: auto;">
+                        <tr style="width: 100%;">                          
+                          <td style="height: 60px; width: auto; border: 1px solid blue; text-align: center;">
+                            <table style="height: auto; width: 100%; background-color: #CE0E2D; border-radius: 2px; margin-top: 0;">
+                              <tr>
+                                <td>
+                                  <p class="nsP" style="
+                                  text-align: center;
+                                  color: #FFFFFF; 
+                                  font-size: 18px;
+                                  letter-spacing: 0.05em; 
+                                  font-weight: 700;
+                                  margin: 0;
+                                  padding: 3px 7px;
+                                  "
+                                >
+                                DAILY NEWSLETTER
+                                </p>
+                                </td>
+                              </tr>
+                            </table>
+                            <table style="width: 100%;">
+                              <tr>
+                                <td>
+                                  <p class="dateP" style="
+                                  color: #CE0E2D;
+                                  margin: 0;
+                                  font-weight: 600;
+                                  font-size: 18px;
+                                  /* text-align: right; */
+                                  "
+                                >
+                                  October 13, 2022
+                                </p>      
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr id="row-2" style="width: 100%">
+                    <td class="titleBox" style="height: 42px;">
+                      <h2 style="
+                        color: #CE0E2D;
+                        border-bottom: 1px solid #D4D4D4;
+                        font-weight: 700;
+                        width: 100%;
+                        height: 40px;
+                        text-align: center;
+                        font-size: 21px;
+                        "
+                      >
+                        Supplier Spotlight
+                      </h2>
+                    </td>
+                  </tr>     
+              </table>
+              <!-- MIDDLE CONTENT -->
+              <table class="middleContent" role="presentation" style="
+                background-color: #ffffff;
+                margin: auto;
+                margin-bottom: 30px;
+                border-collapse:collapse;
+                width: 95%; 
+                max-width:600px;
+                border:0;
+                border-spacing:0;
+                "
+              >
+                  <tr>
+                    <td id="images">
+                      <img class="middleImg" src="https://i.ibb.co/165B39h/part-1.png" alt="middleImage-1" style="
+                        height:auto;
+                        border:0;
+                        width:100%;
+                        max-width:600px;
+                        "
+                      >
+                      <img class="middleImg" src="https://i.ibb.co/FBFqd2s/Part-2.png" alt="middleImage-2" style="
+                        height:auto;
+                        border:0;
+                        width:100%;
+                        max-width:600px;
+                        "
+                      >                    
+                    </td>
+                  </tr>
+              </table>
+              <!-- FOOTER -->
+              <table id="footer" role="presentation" style="  
+                background-color: #ffffff;
+                margin: auto; 
+                border-collapse:collapse;
+                width: 100%;
+                min-height: 318px; 
+                max-width: 545px;
+                border:0;
+                border-spacing:0;
+                border-top: 1px solid #D4D4D4;
+                "
+              >
+                  <tr>
+                    <td>
+                      <table class="pTable" style="margin: auto; width: 100%; font-size: 16px;">
+                        <tr>
+                          <td>
+                            <p class="footerP" id="footerP-1" style="
+                            color: #6C6C6C; 
+                            text-align: left;
+                            font-weight: 400; 
+                            /* font-size: 16px; */
+                            margin: 0;
+                            "
+                          >
+                            This is a paid advertisement from Blue Marble that was sent to the BevNET Newsletter subscriber list. The advertiser bears sole responsibility for the content of this message.
+                          </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="pTable" style="margin: auto; width: 100%;">
+                        <tr>
+                          <td>
+                            <hr id="footerDivider" style="
+                            background-color: #CE0E2D;
+                            border: none;
+                            border-radius: 2px;
+                            width: 61px;
+                            max-width: 61px;
+                            height: 5px;
+                            "
+                          >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="pTable" style="margin: auto; width: 100%; font-size: 16px;">
+                        <tr>
+                          <td>
+                            <p class="footerP" id="footerP-2" style="
+                            font-size: 16px;
+                            text-decoration: none; 
+                            text-align: center; 
+                            color: #CE0E2D; 
+                            font-weight: 500; 
+                            /* font-size: 16px; */
+                            margin: 0;
+                            "
+                          >
+                            BevNET.com, Inc. 65 Chapel Street, Newton, MA 02458 
+                            <br>
+                            hello@bevnet.com
+                          </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="pTable" style="margin: auto; width: 100%; font-size: 16px;">
+                        <tr>
+                          <td>
+                            <p class="footerP" id="footerP-3" style="
+                            color: #6C6C6C; 
+                            text-align: center; 
+                            font-weight: 600; 
+                            /* font-size: 16px; */
+                            margin: 0;
+                            "
+                          >
+                            Submit News  |  Advertise  |  Update Subscription
+                          </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="pTable" style="margin: auto; width: 100%; font-size: 16px;">
+                        <tr>
+                          <td>
+                            <p class="footerP" id="footerP-4" style="
+                            color: #6C6C6C;
+                            text-align: center;
+                            font-weight: 400;
+                            /* font-size: 16px; */
+                            margin: 0;
+                            "
+                          >
+                            You are receiving this email because you subscribed at our website at 
+                            <a id="footerA-1" href="#" style="
+                              text-decoration: none; 
+                              color: #2358C5; 
+                              font-weight: 600;
+                              "
+                            >
+                              http://www.bevnet.com
+                            </a>
+                            . Click 
+                            <a id="footerA-2" href="#" style="
+                              color: #6C6C6C;
+                              text-decoration: underline;
+                              font-weight: 600;
+                              "
+                            >
+                              here</a>
+                              to unsubscribe.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+              </table>
+            </td>
+          </tr>
+  </table>
+ </body>
 </html>
-
-
